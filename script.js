@@ -11,10 +11,10 @@ const addPlayer = () =>{
         console.log('Adicionado o player', nome, '!!')
         const player = document.createElement('li')
         if(role == ''){
-            player.innerHTML = `<li>${nome}</li>`
+            player.innerHTML = `<li class="list-group-item">${nome}</li>`
         }
         else(
-            player.innerHTML = `<li>${nome} - Função: ${role}</li>`
+            player.innerHTML = `<li class="list-group-item">${nome} - Função: ${role}</li>`
         )
         playersList.append(player)
         playerName.value = ''
