@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Equipe</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Equipe</h1>
+        <p>Preencha todas as informações:</p>
+    </div>
+    <form action="">
+        <div>
+            <p><strong>Tipo de equipe:</strong></p>
+            <input type="radio" name="teamType" id="amateur" value="amateur" required>
+            <label for="amateur">Amadora</label>
+            <input type="radio" name="teamType" id="pro" value="pro">
+            <label for="pro">Profissional</label>
+        </div>
+        <div>
+            <p><strong>Dados da equipe:</strong></p>
+            <label for="">Nome da equipe:</label>
+            <input type="text" id="teamName" required><br><br>
+            <label for="teamGame">Em qual game seu time irá competir?</label>
+            <select name="teamGame" id="teamGame" required>
+                <option value="" selected disabled="">-- Selecione --</option>
+                <option value="gameCS">CS:GO</option>
+                <option value="gameLOL">League of Legends</option>
+                <option value="gameR6">Rainbow Six Siege</option>
+                <option value="gameValorant">Valorant</option>
+                <option value="gameFIFA">FIFA</option>
+                <option value="gameDOTA">DOTA 2</option>
+            </select>
+        </div>
+        <div>
+            <p><strong>Jogadores da Equipe:</strong></p>
+            <fieldset>
+                <label for="playerName">Nickname:</label>
+                <input type="text" id="playerName"><br><br>
+                <label for="playerRole">Função:</label>
+                <input type="text" id="playerRole" placeholder="Opcional..."><br><br>
+                <button type="button" id="addPlayerButton">Adicionar jogador</button>
+            </fieldset>
+            <ul id="teamPlayers">
+                
+            </ul>
+        </div>
+        <br>
+        <button type="submit">Cadastrar equipe</button>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
